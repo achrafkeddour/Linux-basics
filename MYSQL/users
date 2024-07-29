@@ -1,0 +1,15 @@
+CREATE USER 'exampleuser'@'192.168.117.%' IDENTIFIED BY 'password';
+CREATE USER 'anothereuser'@'localhost' IDENTIFIED BY 'password2';
+
+GRANT ALL PRIVILEGES ON exampledb.* TO 'exampleuser'@'192.168.117.%'; //give all privileges for a user on a database
+FLUSH PRIVILEGES; //save what i did
+
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnfbind-address = 0.0.0.0
+bind-address = 127.0.0.1  sera  bind-address = 0.0.0.0
+
+mysql -u exampleuser -p -h 192.168.117.10   //to connect as a user (instead of 'sudo mysql' (root) )
+
+example :
+ThinkPad-T580:~$ mysql -u achraf -p -h 192.168.117.195
+Enter password:*********
+mysql>
