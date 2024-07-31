@@ -26,3 +26,6 @@ update user set host = '192.168.%.%' where user = 'achraf' and host = '192.168.1
 
 mysql -u achraf -p -h 192.168.4.195 works (while 192.168.4.195 is my ip@) 
 //Now , whatever my ip address is 192.168.x.x i can access to user 'achraf'; 
+
+
+//privileges (next time inchallah)
