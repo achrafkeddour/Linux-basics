@@ -1,8 +1,15 @@
 Many distributions use the Linux kernel so therefore are commonly known as Linux operating systems
+Every Linux distribution installs and manages packages differently
+
 
 A Linux system is divided into three main parts:
 
-    Hardware - This includes all the hardware that your system runs on as well as memory, CPU, disks, etc.
-    Linux Kernel - As we discussed above, the kernel is the core of the operating system. 
+1.   Hardware - This includes all the hardware that your system runs on as well as memory, CPU, disks, etc.
+2.   Linux Kernel - As we discussed above, the kernel is the core of the operating system. 
                    It manages the hardware and tells it how to interact with the system.
-    User Space - This includes apps, system libraries, user interfaces, as well as utilities and tools that run on top of the kernel
+3.   User Space - This includes apps, system libraries, user interfaces, as well as utilities and tools that run on top of the kernel
+
+
+Debian :     is an operating system composed entirely of free and open-source software. 
+There are three branches that you can use, Stable, Testing and Unstable. 
+Stable is an overall good branch to be on. Testing and Unstable are rolling releases. (kol mara haja jdida)  
