@@ -12,3 +12,6 @@ During this time other efforts such as BSD, MINIX, etc were developed to be UNIX
 one thing that all these UNIX like-systems had in common was the lack of a unified kernel. (kol wahed w kernel ta3ou) 
 
 In 1991, a young fellow named 'Linus Torvalds' started developing : 'The Linux kernel'.
+so the Linux kernel is a Unix-like kernel that embodies the design principles and standards of Unix
+so Linux is an open-source operating system kernel inspired by Unix.
+
