@@ -8,7 +8,8 @@ sudo systemctl enable mysql
 sudo mysql
 
 #To list all users in MySQL
-SELECT User, Host FROM mysql.user;
+select user from mysql.user;         //only users
+SELECT User, Host FROM mysql.user;        //users and their hosts
 
 SHOW DATABASES;
 SHOW TABLES;
