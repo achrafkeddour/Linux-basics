@@ -14,6 +14,10 @@ ThinkPad-T580:~$ mysql -u achraf -p -h 192.168.117.195
 Enter password:*********
 mysql>
 
+#To list all users in MySQL
+select user from mysql.user;         //only users
+SELECT User, Host FROM mysql.user; 
+
 
 
 //changing the accessibilty of a user .. making it accessible for 192.168.0.0/16
