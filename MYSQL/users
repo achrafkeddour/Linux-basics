@@ -28,8 +28,26 @@ mysql -u achraf -p -h 192.168.4.195 works (while 192.168.4.195 is my ip@)
 //Now , whatever my ip address is 192.168.x.x i can access to user 'achraf'; 
 
 
-//privileges (next time inchallah)
+//privileges 
 
 give all privileges to the user 'achraf'@'192.168.%.%' on all databases .. making him like 'root'@'localhost'
 GRANT ALL PRIVILEGES ON *.* TO 'achraf'@'192.168.%.%' WITH GRANT OPTION;
-FLUSH PRIVILEGES;
+FLUSH PRIVILEGES; //i use always after any command to save what i did
+
+GRANT ALL PRIVILEGES ON database_name.* TO 'achraf'@'192.168.%.%'; //giving all privileges to a user on only a database (not all databases)
+flush pr...; //for saving
+
+
+//Viewing User Privileges
+SHOW GRANTS FOR 'achraf'@'192.168.%.%';
+
+
+//database_name.* means all tables in the database .. but we can specify a table  with : database_name.table_name
+
+GRANT SELECT, INSERT, UPDATE ON database_name.table_name TO 'achraf'@'192.168.%.%'; 
+REVOKE INSERT, UPDATE ON database_name.table_name FROM 'achraf'@'192.168.%.%';
+
+//Grant = give (add) , revoke = delete 
+// do not forget 'FLUSH PRIVILEGES;' to save what we did 
+
+
