@@ -30,6 +30,6 @@ mysql -u achraf -p -h 192.168.4.195 works (while 192.168.4.195 is my ip@)
 
 //privileges (next time inchallah)
 
-give all privileges to a 'achraf'@'192.168.%.%' on all databases;
+give all privileges to the user 'achraf'@'192.168.%.%' on all databases .. making him like 'root'@'localhost'
 GRANT ALL PRIVILEGES ON *.* TO 'achraf'@'192.168.%.%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
