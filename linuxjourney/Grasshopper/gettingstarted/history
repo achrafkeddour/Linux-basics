@@ -1,0 +1,17 @@
+the kernel is the most important piece in the OS that allows the hardware to talk to the software 
+it controls pretty much everything that happens on your system. 
+
+In 1969, K.Thompson and D.Ritchie of Bell Laboratories developed the UNIX operating system. 
+It was later rewritten in C to make it more portable and eventually became a widely used operating system. 
+
+then Richard Stallman started working on the GNU (GNU is Not UNIX) project ,which unfortunately never came to completion.
+its goal was to create a free and open-source operating system that mimicked Unix's capabilities without using any Unix code. 
+This ensures that GNU is free from the restrictions and licensing issues associated with Unix.
+
+During this time other efforts such as BSD, MINIX, etc were developed to be UNIX like-systems.
+one thing that all these UNIX like-systems had in common was the lack of a unified kernel. (kol wahed w kernel ta3ou) 
+
+In 1991, a young fellow named 'Linus Torvalds' started developing : 'The Linux kernel'.
+so the Linux kernel is a Unix-like kernel that embodies the design principles and standards of Unix
+so Linux is an open-source operating system kernel inspired by Unix.
+
