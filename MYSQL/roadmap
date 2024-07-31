@@ -1,0 +1,124 @@
+Étape 1: Bases de MySQL
+Installation et Configuration :
+
+    Installation :
+        Installer MySQL sur différentes plateformes (Linux, Windows, Mac).
+    Configuration initiale :
+        Configurer les fichiers initiaux (my.cnf/my.ini).
+        Paramètres de base pour la configuration initiale.
+        Démarrer et arrêter le serveur MySQL.
+
+Introduction à MySQL :
+
+    Concepts de base des bases de données relationnelles :
+        Tables, lignes, colonnes, et relations.
+        Concepts de clé primaire et étrangère.
+    Introduction à MySQL et ses outils :
+        Présentation de MySQL Workbench.
+        Utilisation de la ligne de commande MySQL.
+
+Langage SQL de base :
+
+    Création de bases de données et de tables :
+        Utilisation de CREATE DATABASE et CREATE TABLE.
+    Types de données dans MySQL :
+        Types de données numériques, chaînes, date/heure, etc.
+    Opérations CRUD (Create, Read, Update, Delete) :
+        Insertion de données avec INSERT.
+        Lecture de données avec SELECT.
+        Mise à jour de données avec UPDATE.
+        Suppression de données avec DELETE.
+    Utilisation de SELECT avec diverses clauses :
+        Clauses WHERE, ORDER BY, GROUP BY, HAVING.
+    Fonctions intégrées :
+        Fonctions d#agrégation (SUM, AVG, COUNT).
+        Fonctions de chaîne (CONCAT, SUBSTRING).
+        Fonctions de date (NOW, DATE_ADD).
+
+Étape 2: Gestion Avancée des Données
+Joins et Sous-requêtes :
+
+    Comprendre et utiliser différents types de JOIN :
+        INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN.
+    Écriture et utilisation de sous-requêtes :
+        Sous-requêtes dans SELECT, FROM, WHERE.
+
+Indexation et Optimisation :
+
+    Création et gestion des index :
+        Utilisation de CREATE INDEX et DROP INDEX.
+    Optimisation des requêtes :
+        Identifier les requêtes lentes.
+        Techniques pour améliorer les performances des requêtes.
+    Utilisation de l'outil EXPLAIN :
+        Analyser et comprendre les plans d'exécution des requêtes.
+
+Transactions et Verrouillage :
+
+    Concepts de transactions (ACID) :
+        Atomicité, Cohérence, Isolation, Durabilité.
+    Gestion des transactions :
+        Utilisation de START TRANSACTION, COMMIT, ROLLBACK.
+    Gestion des niveaux d'isolation et des verrous :
+        Différents niveaux d'isolation (READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE).
+        Types de verrous (verrous partagés et exclusifs).
+
+Étape 3: Programmation et Sécurité
+Procédures Stockées et Fonctions :
+
+    Création de procédures stockées :
+        Syntaxe de CREATE PROCEDURE.
+        Gestion des paramètres IN, OUT, INOUT.
+    Création de fonctions utilisateur définies :
+        Syntaxe de CREATE FUNCTION.
+        Utilisation des fonctions dans les requêtes SQL.
+    Gestion des déclencheurs (triggers) :
+        Création de TRIGGER pour des actions avant ou après les opérations DML (INSERT, UPDATE, DELETE).
+
+Sécurité Avancée :
+
+    Meilleures pratiques de sécurité :
+        Politique de mots de passe forts.
+        Mise à jour et correctifs réguliers.
+    Gestion des utilisateurs et des privilèges avancés :
+        Création et gestion des utilisateurs avec CREATE USER et GRANT.
+    Sécurisation des communications :
+        Configuration de SSL/TLS pour sécuriser les communications client-serveur.
+
+Sauvegarde et Restauration :
+
+    Utilisation de mysqldump et mysqlpump :
+        Syntaxe et options pour les sauvegardes.
+    Stratégies de sauvegarde et de restauration :
+        Sauvegardes complètes, incrémentales, différentielles.
+    Planification des sauvegardes automatiques :
+        Utilisation de cron (Linux) ou de tâches planifiées (Windows).
+
+Étape 4: Administration et Performances
+Administration de Serveur MySQL :
+
+    Surveillance et gestion des performances :
+        Surveillance des métriques de performances (CPU, RAM, I/O).
+    Utilisation de MySQL Enterprise Monitor :
+        Installation et configuration de MySQL Enterprise Monitor.
+    Maintenance des bases de données :
+        Réparation et optimisation des tables.
+
+Répliques et Haute Disponibilité :
+
+    Configurer la réplication MySQL :
+        Réplication Master-Slave, Master-Master.
+        Utilisation de GTID pour la réplication.
+    Solutions de haute disponibilité (HA) :
+        Configuration de MySQL Cluster, MySQL InnoDB Cluster.
+
+Utilisation Avancée de MySQL :
+
+    MySQL Partitioning :
+        Création et gestion des partitions de table.
+    MySQL Fabric :
+        Configuration de MySQL Fabric pour la gestion des shards.
+    Utilisation de MySQL avec des frameworks :
+        Intégration avec des frameworks comme Hibernate, Django, etc.
+
+Cette roadmap devrait vous fournir une structure claire et détaillée pour apprendre MySQL, en progressant des bases vers des sujets plus avancés et spécialisés.
