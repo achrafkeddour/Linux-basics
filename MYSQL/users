@@ -13,3 +13,12 @@ example :
 ThinkPad-T580:~$ mysql -u achraf -p -h 192.168.117.195
 Enter password:*********
 mysql>
+
+
+
+//changing the accessibilty of a user .. making it accessible for 192.168.0.0/16
+
+update user set host = '192.168.%.%' where user = 'achraf' and host = '192.168.117.%';
+
+mysql -u achraf -p -h 192.168.4.195 works (while 192.168.4.195 is my ip@) 
+//Now , whatever my ip address is 192.168.x.x i can access to user 'achraf'; 
