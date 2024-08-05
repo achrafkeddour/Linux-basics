@@ -4,3 +4,6 @@ hello //direct result in the shell
 achraf@achraf-ASUSLaptop:~/Desktop/dir1$ pwd //print working directory
 /home/achraf/Desktop/dir1
 
+$ cd .. return to the parent directory
+$ cd ~  return to /home/username
+$ cd - return to the precedent one (where i were working before)
