@@ -1,1 +1,6 @@
+achraf@achraf-ASUSLaptop:~$ echo hello
+hello //direct result in the shell
+
+achraf@achraf-ASUSLaptop:~/Desktop/dir1$ pwd //print working directory
+/home/achraf/Desktop/dir1
 
