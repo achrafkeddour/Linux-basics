@@ -1,4 +1,3 @@
-
 achraf@achraf-ASUSLaptop:~$ echo hello
 hello //direct result in the shell
 
@@ -27,3 +26,37 @@ Touch is also used to change timestamps on existing files and directories.
 file something
 In Linux, filenames aren’t required to represent the contents of the file. You can create a file called funny.gif that isn’t actually a GIF.
 'file server.js' will show you a description of the file’s contents. (it can be a picture)
+
+
+cat index.html server.js (it can be used for concatenations between two files to show their contents)
+It’s not great for viewing large files and it’s only meant for short content. 
+
+
+less /home/pete/Documents/text1 
+this opens the file text1 for viewing in the less pager, allowing you to scroll through the contevnt.
+q - Used to quit out of less and go back to your shell.
+g - Moves to beginning of the text file.
+G - Moves to the end of the text file.
+/search - You can search for specific text inside the text document
+h - help
+
+
+The command `history` displays a list of previously executed commands in the terminal session.
+ctrl+R : gimme the option to search about previous commands (instead of clicking the up arrow )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
