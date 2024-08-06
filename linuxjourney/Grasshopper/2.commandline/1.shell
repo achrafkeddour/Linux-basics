@@ -18,5 +18,12 @@ you can view them however with the ls command and pass the -a flag to it (a for 
 
 ls -l : to see   file permissions, 
 number of links, owner name, owner group, file size, timestamp of last modification, and file/directory name.
-
 ls -la : all details for all files 
+
+
+touch mysuperduperfile 
+Touch is also used to change timestamps on existing files and directories. 
+
+file something
+In Linux, filenames aren’t required to represent the contents of the file. You can create a file called funny.gif that isn’t actually a GIF.
+'file server.js' will show you a description of the file’s contents. (it can be a picture)
