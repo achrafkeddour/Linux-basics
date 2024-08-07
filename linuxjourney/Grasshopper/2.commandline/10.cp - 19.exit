@@ -9,7 +9,15 @@ rm -r directoryhaha //to delete all the directory (use rm not rmdir)
 
 if you copy a file over to a directory that has the same filename, the file will be overwritten with whatever you are copying over. 
 You can use the -i flag (interactive) to prompt you before overwriting a file.
-
 $ cp -i mycoolfile /home/pete/Pictures //i may have a 'mycoolfile' in 'Pictures' directory
 
 
+You can rename files or directories like this: $ mv oldfile newfile .. $ mv directory1 directory2
+And move one file or more : $ mv file_1 file_2 /somedirectory
+if you mv a file or directory it will overwrite anything in the same directory. 
+So you can use the -i flag to prompt you before overwriting anything.
+mv -i directory1 directory2
+
+Let’s say you did want to mv a file to overwrite the previous one. 
+You can also make a backup of that file and it will just rename the old version with a ~.
+$ mv -b directory1 directory2
