@@ -5,7 +5,6 @@ $ cp *.jpg /home/pete/Pictures
 
  useful command is to use the -r flag, this will recursively copy the files and directories within a directory. (directory complete)
 $ cp -r directoryname/ /home/achraf/Documents
-rm -r directoryhaha //to delete all the directory (use rm not rmdir)
 
 if you copy a file over to a directory that has the same filename, the file will be overwritten with whatever you are copying over. 
 You can use the -i flag (interactive) to prompt you before overwriting a file.
@@ -25,3 +24,11 @@ $ mv -b directory1 directory2
 
 mkdir dir1 dir2 //creating a lot of directories 
 $ mkdir -p Documents/directoryjdida/subdirjdida //creating subdirectory and its container (both)
+
+
+$ rm file1
+Take caution when using rm, there is no magical trash can that you can fish out removed files. 
+Once they are gone, they are gone for good, so be careful. 
+ 
+rm -f file1 :  -f or force option tells rm to remove all files, whether they are write protected or not, without prompting the user 
+$ rm -r directory : you’ll need to add the -r flag (recursive) to remove all the files and any subdirectories it may have.
