@@ -5,3 +5,5 @@ $ cp *.jpg /home/pete/Pictures
 
  useful command is to use the -r flag, this will recursively copy the files and directories within a directory. (directory complete)
 $ cp -r directoryname/ /home/achraf/Documents
+rm -r directoryhaha //to delete all the directory (use rm not rmdir)
+
