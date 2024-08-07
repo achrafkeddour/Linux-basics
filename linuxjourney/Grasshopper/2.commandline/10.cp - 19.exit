@@ -7,3 +7,9 @@ $ cp *.jpg /home/pete/Pictures
 $ cp -r directoryname/ /home/achraf/Documents
 rm -r directoryhaha //to delete all the directory (use rm not rmdir)
 
+if you copy a file over to a directory that has the same filename, the file will be overwritten with whatever you are copying over. 
+You can use the -i flag (interactive) to prompt you before overwriting a file.
+
+$ cp -i mycoolfile /home/pete/Pictures //i may have a 'mycoolfile' in 'Pictures' directory
+
+
