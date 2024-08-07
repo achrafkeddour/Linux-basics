@@ -21,3 +21,7 @@ mv -i directory1 directory2
 Let’s say you did want to mv a file to overwrite the previous one. 
 You can also make a backup of that file and it will just rename the old version with a ~.
 $ mv -b directory1 directory2
+
+
+mkdir dir1 dir2 //creating a lot of directories 
+$ mkdir -p Documents/directoryjdida/subdirjdida //creating subdirectory and its container 
