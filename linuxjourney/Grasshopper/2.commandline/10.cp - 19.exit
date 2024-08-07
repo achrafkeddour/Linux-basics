@@ -24,4 +24,4 @@ $ mv -b directory1 directory2
 
 
 mkdir dir1 dir2 //creating a lot of directories 
-$ mkdir -p Documents/directoryjdida/subdirjdida //creating subdirectory and its container 
+$ mkdir -p Documents/directoryjdida/subdirjdida //creating subdirectory and its container (both)
