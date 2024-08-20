@@ -56,3 +56,5 @@ $ alias foobar='ls -la'    ..this command won't save your alias after reboot
 
 #to save alias , you must add them here : sudo nano ~/.bashrc 
 #You can remove aliases with the unalias command: $ unalias foobar
+
+#19 exit 
