@@ -1,4 +1,5 @@
- cp mycoolfile /home/pete/Documents/cooldocs
+#10
+cp mycoolfile /home/pete/Documents/cooldocs
 
 * the wildcard of wildcards, it's used to represent all single characters or any string.
 $ cp *.jpg /home/pete/Pictures
@@ -18,14 +19,11 @@ So you can use the -i flag to prompt you before overwriting anything.
 mv -i directory1 directory2
 
 Let’s say you did want to mv a file to overwrite the previous one. 
-You can also make a backup of that file and it will just rename the old version with a ~.
-$ mv -b directory1 directory2
-
-
+You canprovides a brief description of command line programs. 
 mkdir dir1 dir2 //creating a lot of directories 
 $ mkdir -p Documents/directoryjdida/subdirjdida //creating subdirectory and its container (both)
 
-
+#13
 $ rm file1
 Take caution when using rm, there is no magical trash can that you can fish out removed files. 
 Once they are gone, they are gone for good, so be careful. 
@@ -33,7 +31,28 @@ Once they are gone, they are gone for good, so be careful.
 rm -f file1 :  -f or force option tells rm to remove all files, whether they are write protected or not, without prompting the user 
 $ rm -r directory : you’ll need to add the -r flag (recursive) to remove all the files and any subdirectories it may have.
 
-
+#14
 $ find /home -name puppies.jpg 
 achraf@hostname:~$ find Desktop -name index.html  ..result is :   Desktop/index.html
 $ find /home -type d -name MyFolder  ..(d) for directory
+
+
+#15 (help , but man is better , and whatis is the best) 
+help, is a built-in bash command that provides help for other bash commands (echo, logout, pwd, etc). ex : help echo
+it can be : $ echo --help in some programs 
+
+
+#16
+you can see the manuals for a command with the man command.
+$ man ls
+
+#17
+whatis provides a brief description of command line programs.
+$ whatis cat
+
+#18 
+if you need to type a long command many times, it’s best to have an alias you can use for that. 
+$ alias foobar='ls -la'    ..this command won't save your alias after reboot
+
+#to save alias , you must add them here : sudo nano ~/.bashrc 
+#You can remove aliases with the unalias command: $ unalias foobar
