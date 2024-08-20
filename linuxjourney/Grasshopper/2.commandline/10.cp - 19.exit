@@ -32,3 +32,8 @@ Once they are gone, they are gone for good, so be careful.
  
 rm -f file1 :  -f or force option tells rm to remove all files, whether they are write protected or not, without prompting the user 
 $ rm -r directory : you’ll need to add the -r flag (recursive) to remove all the files and any subdirectories it may have.
+
+
+$ find /home -name puppies.jpg 
+achraf@hostname:~$ find Desktop -name index.html  ..result is :   Desktop/index.html
+$ find /home -type d -name MyFolder  ..(d) for directory
