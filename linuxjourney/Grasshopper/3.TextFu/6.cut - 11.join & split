@@ -29,3 +29,24 @@ cut -f 1 -d "e" sample.txt , this give me :
 appl
 dog     cat      mous
 
+#8 'paste' : Let's combine all lines into one line .. but delimited by ' ' (by default , or i can cahnge and specify the delimiter)
+
+$ paste sample.txt         #same result as cat sample.txt
+apple   banana   cherry
+dog     cat      mouse
+
+$ paste -s sample.txt 
+apple   banana   cherry	dog     cat      mouse
+
+$ paste -d 'w' -s sample.txt
+apple   banana   cherrywdog     cat      mouse
+
+$ paste -d '' -s sample.txt       #delimiter is nothing
+apple   banana   cherrydog     cat      mouse
+
+
+
+
+
+
+
