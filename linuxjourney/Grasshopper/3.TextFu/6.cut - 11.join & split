@@ -45,6 +45,11 @@ $ paste -d '' -s sample.txt       #delimiter is nothing
 apple   banana   cherrydog     cat      mouse
 
 
+#8 : head   ,  by default the head command will show you only the first 10 lines in a file.
+$ head file.txt 
+#You can also modify the line count to whatever you choose, let's say I wanted to see the first 15 lines instead
+$ head -n 15 file.txt
+
 
 
 
