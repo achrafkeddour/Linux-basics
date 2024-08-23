@@ -43,3 +43,17 @@ exten => 222222,1,Dial(SIP/phone2)
 sudo systemctl start asterisk
 sudo systemctl enable asterisk
 sudo systemctl status asterisk
+
+
+
+#now i have two users in my local network  
+#the first user is named phone1 with the number 111111
+#the second user is named phone2 with the number 222222
+
+
+#Now all i need is to install 'Linphone' on two phones of two clients and choose 'USE SIP ACCOUNT' 
+#i need to enter the username and password of each user i created (like phone1 and password1) 
+#for the domain .. i put the ip address of the server (where i configured the server asterisk) or directly the domain if i have 
+#and ichoose the 'UDP' transport and NOT TCP and NOT TLS 
+
+
