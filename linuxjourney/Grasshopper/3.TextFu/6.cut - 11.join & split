@@ -1,1 +1,31 @@
+#6 cut
+
+#let's say i have a file named 'sample.txt' made from 3 lines : '
+jo is happy
+smith is a name
+how are you 
+'
+to outputs the 5th character in each line of the file
+$ cut -c 5 sample.txt 
+#this commade gimme a result : 
+s
+h
+a
+
+#also if i have a file sample.txt with content : 
+apple   banana   cherry
+dog     cat      mouse
+
+cut -f 2 sample.txt gimme : banana
+                            cat
+
+# -f or field flag cuts text based off of fields, by default it uses TABs as delimiters (ki nel9a TAB n9ol kemelt filed) ,
+#so everything separated by a TAB is considered a separated field. 
+
+#but we can manipulate and specify the delimiter !
+#for example im gonna make the 'e' as a deleimeter ( ki nl9aha n9ol ani kemelt field) 
+
+cut -f 1 -d "e" sample.txt , this give me : 
+appl
+dog     cat      mous
 
