@@ -1,0 +1,45 @@
+sudo apt-get update
+sudo apt install asterisk
+
+sudo nano /etc/asterisk/sip.conf
+#inside sip.conf add this content :
+[general]
+context=default
+allowguest=no
+allowoverlap=no
+udpbindaddr=0.0.0.0
+tcpenable=no
+transport=udp
+srvlookup=yes
+allow=ulaw
+
+[phone1]
+type=friend
+context=phones
+host=dynamic
+secret=password1
+disallow=all
+allow=ulaw
+
+[phone2]
+type=friend
+context=phones
+host=dynamic
+secret=password2
+disallow=all
+allow=ulaw
+
+
+sudo nano /etc/asterisk/extensions.conf
+#inside extensions.conf add this content :
+
+[phones]
+exten => 111111,1,Dial(SIP/phone1)
+exten => 222222,1,Dial(SIP/phone2)
+
+
+
+#then
+sudo systemctl start asterisk
+sudo systemctl enable asterisk
+sudo systemctl status asterisk
