@@ -29,7 +29,7 @@ cut -f 1 -d "e" sample.txt , this give me :
 appl
 dog     cat      mous
 
-#8 'paste' : Let's combine all lines into one line .. but delimited by ' ' (by default , or i can cahnge and specify the delimiter)
+#7 paste : Combine all lines into one line .. but delimited by ' ' (by default , or i can cahnge and specify the delimiter)
 
 $ paste sample.txt         #same result as cat sample.txt
 apple   banana   cherry
