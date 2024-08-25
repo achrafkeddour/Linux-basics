@@ -50,11 +50,27 @@ $ head file.txt
 #You can also modify the line count to whatever you choose, let's say I wanted to see the first 15 lines instead
 $ head -n 15 file.txt
 
+
 #best use case of head and tail is for /var/log/syslog
 #9 : tail   , Similar to the head command, the tail command lets you see the last 10 lines of a file by default
 $ tail file.txt
 $ tail -n 10 file.txt
 $ tail -f /var/log/syslog
+
+
+#expand : is used to specify and modify the TAB distance 
+
+$ expand file.txt
+aaaaaaaaaaaa    bbbbbbbbbbbbbbbbbbbbbb
+ddddd   cccccc
+$ expand -t 50 file.txt
+aaaaaaaaaaaa                                      bbbbbbbbbbbbbbbbbbbbbb
+ddddd                                             cccccc
+
+$ expand -t 30 file.txt > result.txt
+$ cat result.txt
+aaaaaaaaaaaa                  bbbbbbbbbbbbbbbbbbbbbb
+ddddd                         cccccc
 
 
 
