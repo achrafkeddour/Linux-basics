@@ -23,3 +23,69 @@ $ sort file1.txt
 $ sort -r file1.txt (a reverse alphabetical sort )
 
 $ sort -n file1.txt    #sort via numerical value
+
+
+#13. tr (Translate)
+echo "hello world" | tr a-z A-Z
+HELLO WORLD
+
+$ tr a-z A-Z < file.txt #translating the content into uppercase
+AAAAAAAAAAA
+
+$ tr a-z A-Z < a.txt | nano b.txt #putting the new content in another file 
+
+
+#14 uniq  Note : uniq does not detect duplicate lines unless they are adjacent. (lazem like these examples)
+reading.txt :
+book
+book
+paper
+paper
+magazine
+
+$ uniq reading.txt 
+book
+paper
+magazine
+
+#Let's get the count of how many occurrences of a line:
+$ uniq -c reading.txt 
+2 book
+2 paper
+1 magazine
+
+#just get unique values:
+$ uniq -u reading.txt
+magazine
+
+#To overcome this limitation of uniq we can use sort in combination with uniq:
+$ sort reading.txt | uniq
+book
+magazine
+paper
+
+
+#15 wc
+$ wc filename.txt
+#i get : 10  50  300 filename.txt 
+#it means : the file has 10 lines, 50 words, and 300 bytes.
+
+wc [option] filename.txt , possible options :
+ -l: Print the number of lines in the file.
+ -w: Print the number of words in the file.
+ -c: Print the number of bytes in the file.
+ -m: Print the number of characters in the file (useful for multibyte character sets).  
+ -L: Print the length of the longest line in the file.
+
+
+#16 nl : used to check the count of lines on a file
+file1.txt
+i
+like
+turtles
+
+$ nl file1.txt
+1. i
+2. like
+3. turtles
+
