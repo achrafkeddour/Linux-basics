@@ -13,3 +13,13 @@ $ join file1.txt file2.txt
 1 John Doe
 2 Jane Doe
 3 Mary Sue
+
+#split : to split a file basing on a number of lines 
+#split -l 5 example.txt, it will split this file into files (each file made from 5 lines)
+
+
+#12 sort : arranges the lines of a file or input in a specified order (alphabetical by default )
+$ sort file1.txt
+$ sort -r file1.txt (a reverse alphabetical sort )
+
+$ sort -n file1.txt    #sort via numerical value
