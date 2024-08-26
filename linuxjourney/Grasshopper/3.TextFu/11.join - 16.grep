@@ -78,7 +78,7 @@ wc [option] filename.txt , possible options :
  -L: Print the length of the longest line in the file.
 
 
-#16 nl : used to check the count of lines on a file
+#15 nl : used to check the count of lines on a file
 file1.txt
 i
 like
@@ -89,3 +89,15 @@ $ nl file1.txt
 2. like
 3. turtles
 
+
+#16 grep : used to search for specific patterns of text within files or input streams. The name "grep" stands for Globally search a Regular Expression and Print matching lines.
+grep "word" filename.txt
+
+#The -i option ensures that the search is case-insensitive, so "word", "Word", "WORD", etc., are all considered matches.
+grep -i "word" filename.txt
+
+#To get even more flexible with grep you can combine it with other commands with |.
+$ env | grep -i User
+
+#$ ls /somedir | grep '.txt$'
+Should return all files ending with .txt in somedir. 
