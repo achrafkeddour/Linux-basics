@@ -1,1 +1,14 @@
+#Vim stands for vi (Improved) just like its name it stands for an improved version of the vi text editor command
+#we start using it with 'vim file.txt'
 
+#4. Vim Search Patterns :
+#just type the / key and then your search result while you are in a vim session
+#
+press "n" to go forward or "N" to go backward in your search results
+
+vim file.txt : My pretty file is very pretty.
+
+/pretty
+
+# will find the pretty words in the text file. press n to check all of them
+#(we can use ?pretty for search also but result will start from the last)
