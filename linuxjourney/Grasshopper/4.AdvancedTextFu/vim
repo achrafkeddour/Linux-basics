@@ -31,9 +31,25 @@ vim file.txt : My pretty file is very pretty.
 #To exit insert mode and go back to command mode, just hit the Esc key.
 
 
-#7
+#7. Vim Editing 
+# x : used to delete characters
+# dd : delete current line 
+# yy : copy the current line 
+# p : paste the copied text
+# y : copy the selected text (i tried it, it failed)
 
 
-#8 
-
+#8. Vim Saving and Exiting
+# :w saves the file
 #you can force the save by typing: :w!
+# :q  , quit out of vim
+# :q! , quit out of vim without saving the file
+# :wq , save and quit 
+# ZZ , faster for save and quit 
+
+
+
+
+
+
+
