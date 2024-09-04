@@ -1,0 +1,42 @@
+#1 Regex, or regular expression :  
+# is a sequence of characters that defines a search pattern. It's used in Linux for tasks like searching, matching, and manipulating text in files or streams.
+
+#our text forhttps://github.com/achrafkeddour/Linux-basics/new/main/linuxjourney/Grasshopper/4.AdvancedTextFu testing :
+
+sally sells seashells 
+by the seashore
+
+# (what we will apply now is in searching case .. like vim we search using '/' )
+#which means i open a file using 'vim file.txt' , then i click / for searching , then i start apply what is next 
+
+1. Beginning of a line with ^
+^by
+would match the line "by the seashore"
+
+2. End of a line with $
+seashore$
+would match the line "by the seashore"
+
+3. Matching any single character with .
+b.
+would match by
+
+4. Bracket notation with []
+#This can be a little tricky, brackets allow us to specify characters found within the bracket.
+d[iou]g
+would match: dig, dog, dug
+
+#The previous anchor tag ^ when used in a bracket means anything except the characters within the bracket.
+d[^i]g
+would match: dog and dug but not dig
+
+#Brackets can also use ranges to increase the amount of characters you want to use.
+d[a-c]g
+will match patterns like dag, dbg, and dcg
+
+#Be careful though as brackets are case sensitive:
+d[A-C]g
+will match dAg, dBg and dCg but not dag, dbg and dcg
+
+
+
