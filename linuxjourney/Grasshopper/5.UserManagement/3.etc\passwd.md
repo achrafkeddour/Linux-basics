@@ -34,3 +34,4 @@ daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 
 **we have multiple service/system accounts to isolate and manage different system services and applications securely**
 
+**Also should note that you can edit the /etc/passwd file by hand if you want to add users and modify information with the vipw tool,**
