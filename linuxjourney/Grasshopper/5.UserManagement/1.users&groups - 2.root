@@ -8,3 +8,4 @@
 #we enable it by : sudo su , or sudo ourcommand
 
 #we can change into another user by 'su username' (it must be created before)
+#here is a file called the /etc/sudoers file, this file lists users who can run sudo. You can edit this file with the 'visudo' command.
