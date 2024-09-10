@@ -1,0 +1,9 @@
+#This file allows for different groups with different permissions. 
+
+
+#Very similar to the /etc/password field, the /etc/group fields are as follows:
+
+#    Group name
+#    Group password - there isnt a need to set a group password, using an elevated privilege like sudo is standard. A "*" will be put in place as the default value.
+#    Group ID (GID)
+#    List of users - you can manually specify users you want in a specific group
