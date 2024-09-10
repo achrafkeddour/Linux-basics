@@ -1,0 +1,2 @@
+#usernames arent really identifications for users. The system uses a user ID (UID) to identify a user. 
+#To find out what users are mapped to what ID, look at /etc/passwd 
