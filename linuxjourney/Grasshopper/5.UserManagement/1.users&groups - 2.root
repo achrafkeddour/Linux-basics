@@ -1,0 +1,8 @@
+#In an OS , users and groups are used to control access to files, programs, and system settings. 
+
+#The system uses user ids (UID) to manage users, usernames are the friendly way to associate users with identification, but the system identifies users by their UID
+#groups are identified by the system with their group ID (GID)
+
+#Sometimes users are system daemons that continuously run processes to keep the system functioning.
+#root is the most important & powerful user on the system, root can access any file and start and terminate any process.
+#we enable it by : sudo su , or sudo ourcommand
