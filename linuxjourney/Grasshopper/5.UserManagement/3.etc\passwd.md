@@ -32,4 +32,5 @@ john:x:1001:1001:John Doe:/home/john:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 ```
 
+**we have multiple service/system accounts to isolate and manage different system services and applications securely**
 
