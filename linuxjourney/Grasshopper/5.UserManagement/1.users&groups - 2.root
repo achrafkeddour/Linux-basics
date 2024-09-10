@@ -6,3 +6,5 @@
 #Sometimes users are system daemons that continuously run processes to keep the system functioning.
 #root is the most important & powerful user on the system, root can access any file and start and terminate any process.
 #we enable it by : sudo su , or sudo ourcommand
+
+#we can change into another user by 'su username' (it must be created before)
