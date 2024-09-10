@@ -1,0 +1,18 @@
+#Adding Users :
+
+#You can use the 'adduser' or the 'useradd' command.
+# 'adduser' command contains more helpful features such as making a home directory and more. 
+#There are configuration files for adding new users that can be customized depending on what you want to allocate to a default user.
+
+$ sudo useradd bob
+$ sudo adduser bob
+
+
+#Removing Users
+$ sudo userdel bob
+
+
+
+#Changing Passwords
+$ passwd bob
+#This will allow you to change the password of yourself or another user (if you are root).
