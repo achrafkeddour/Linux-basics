@@ -1,0 +1,21 @@
+ls -l :
+
+d | rwx | r-x | r-x
+
+    d: This means the item is a directory. (if - instead of d , it means a file) 
+    rwx: The permissions for the owner of the directory (user) (read, write, execute).
+    r-x: The permissions for the group (read and execute, but no write).
+    r-x: The permissions for others (read and execute, but no write).
+
+#The owner (also called the "user") is the person who created the file or directory, or the person to whom the file is assigned.
+
+#A group is a collection of users. Every file is assigned to a specific group. Users in the group can have shared permissions for the file or directory. 
+
+#Others refers to everyone else on the system who is not the owner or in the group associated with the file.
+
+
+$ ls -l Desktop/
+
+#drwxr-xr-x 2 pete penguins 4096 Dec 1 11:45 .
+#pete : user 
+#penguins : group
