@@ -2,6 +2,8 @@
 
 $ sudo cat /etc/shadow
 root:MyEPTEa$6Nonsense:15000:0:99999:7:::
+#username:password_hash:last_change:min_age:max_age:warning:inactive:expire
+
 
 #in the password field you'll see an encrypted password. The fields are separated by colons
 
@@ -18,3 +20,4 @@ root:MyEPTEa$6Nonsense:15000:0:99999:7:::
 
 #In most distributions today, user authentication doesn't rely on just the /etc/shadow file, 
 #there are other mechanisms in place such as PAM (Pluggable Authentication Modules) that replace authentication.
+
