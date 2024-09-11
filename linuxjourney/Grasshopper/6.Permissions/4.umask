@@ -1,0 +1,10 @@
+# umask (short for "user file-creation mode mask") is a command and setting that determines the default permissions for newly created files and directories.
+#(li ra7 ncryiw mb3d) 
+
+#Example: umask 021
+
+#        In 021, the digits represent the permissions to subtract for the owner, group, and others, respectively:
+ #           0 means do not subtract any permissions for the owner.
+  #          2 means subtract write permissions for the group.
+   #         1 means subtract execute permissions for others.
+   
