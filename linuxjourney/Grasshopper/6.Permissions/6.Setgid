@@ -1,0 +1,13 @@
+#Setgid
+#Similar to the set user ID permission bit, there is a set group ID (SGID) permission bit. 
+#This bit allows a program to run as if it was a member of that group. 
+
+$ ls -l /usr/bin/wall
+-rwxr-sr-x 1 root tty 19024 Dec 14 11:45 /usr/bin/wall
+
+# Modifying SGID :
+
+$ sudo chmod g+s myfile
+$ sudo chmod 2555 myfile
+
+#the inverse : $ sudo chmod g-s myfile
