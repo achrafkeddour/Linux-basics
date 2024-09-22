@@ -1,8 +1,7 @@
 ```
 sudo apt update
 sudo apt install gdm3
-//making it as default display manager**
-sudo dpkg-reconfigure gdm3
+sudo dpkg-reconfigure gdm3 //making it as default display manager
 sudo reboot 
 ```
 
