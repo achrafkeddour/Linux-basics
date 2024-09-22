@@ -21,7 +21,9 @@ mv -i directory1 directory2
 Let’s say you did want to mv a file to overwrite the previous one. 
 You canprovides a brief description of command line programs. 
 mkdir dir1 dir2 //creating a lot of directories 
+$ mkdir -p  parent/child
 $ mkdir -p Documents/directoryjdida/subdirjdida //creating subdirectory and its container (both)
+
 
 #13
 $ rm file1
@@ -34,7 +36,7 @@ $ rm -r directory : you’ll need to add the -r flag (recursive) to remove all t
 #14
 $ find /home -name puppies.jpg 
 achraf@hostname:~$ find Desktop -name index.html  ..result is :   Desktop/index.html
-$ find /home -type d -name MyFolder  ..(d) for directory
+$ find /home -type d -name MyFolder  ..(d) for directory (f) for file
 
 
 #15 (help , but man is better , and whatis is the best) 
