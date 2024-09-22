@@ -13,5 +13,7 @@ sudo systemctl start gdm3
 ```
 
 ### to stop it :
+```
 sudo systemctl disable gdm3
 sudo systemctl stop gdm3
+```
