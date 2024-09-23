@@ -18,8 +18,7 @@
     - [Effective User ID (EUID)](#effective-user-id-euid)
     - [Saved Set User ID (SUID)](#saved-set-user-id-suid)
 8. [Practical Examples and Use Cases](#practical-examples-and-use-cases)
-9. [Summary](#summary)
-
+9. sticky-bit
 ---
 
 ## Understanding `ls -l` Output
@@ -441,17 +440,22 @@ int main() {
 
 ---
 
-## Summary
+## Modify sticky bit
 
-In this course, you've learned:
+```
+$ sudo chmod +t mydir
+$ sudo chmod 1755 mydir
+```
 
-- **Understanding Permissions**: Interpreting `ls -l` output and the significance of user, group, and others.
-- **Managing Groups**: Creating groups, adding/removing users, and changing group ownership.
-- **Changing Permissions**: Utilizing `chmod` in both symbolic and numeric modes.
-- **Changing Ownership**: Using `chown` and `chgrp` to modify file and directory ownership.
-- **Special Permissions**: Implementing SUID and SGID for elevated and group-specific privileges.
-- **User IDs**: Differentiating between Real, Effective, and Saved User IDs and their roles in process permissions.
+## result :
 
-By mastering these concepts, you can effectively manage file and directory permissions, ensuring both security and functionality within your Linux environment.
+```
+$ ls -ld /mydir
+drwxrwxrwxt 6 root root 4096 Dec 15 11:45 /mydir
+```
+
+**You'll see a special permission bit at the end here t,
+this means everyone can add files, write files, modify files in the /mydir directory, 
+but only root (owner) can delete the /mydir directory.**
 
 ---
