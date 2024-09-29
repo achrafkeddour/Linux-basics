@@ -1,0 +1,94 @@
+# Job Control in the Terminal
+
+When you're using the terminal, sometimes a command might take a long time to finish. This can stop you from doing other tasks in the same window. However, by controlling how your processes (jobs) run, you can send tasks to the background and continue working.
+
+Here's how you can manage jobs in the terminal:
+
+---
+
+## 1. **Running a Job in the Background**
+
+To run a command in the background (so it doesn’t block your terminal), simply add an ampersand (`&`) at the end of the command.
+
+### Example:
+```bash
+$ sleep 1000 &
+$ sleep 1001 &
+$ sleep 1002 &
+```
+
+The `sleep` command will pause for a set time (in seconds), and the `&` sends it to the background so you can keep using the terminal.
+
+---
+
+## 2. **Viewing Background Jobs**
+
+You can see all the jobs running in the background by using the `jobs` command.
+
+### Example:
+```bash
+$ jobs
+[1]    Running     sleep 1000 &
+[2]-   Running     sleep 1001 &
+[3]+   Running     sleep 1002 &
+```
+
+- `[1]`, `[2]`, and `[3]` are job IDs.
+- The `+` sign means it’s the most recent job.
+- The `-` sign indicates it's the second most recent.
+
+---
+
+## 3. **Sending a Running Job to the Background**
+
+If you started a job without `&` and now want to send it to the background, here’s how:
+
+1. **Pause the job** with `Ctrl + Z`. This will suspend (pause) the job.
+2. **Send it to the background** with the `bg` command.
+
+### Example:
+```bash
+$ sleep 1003
+^Z                # Press Ctrl + Z to pause the job
+[4]+    Stopped     sleep 1003
+
+$ bg
+[4]+    sleep 1003 &
+```
+
+Now, the job `sleep 1003` is running in the background.
+
+---
+
+## 4. **Bringing a Background Job to the Foreground**
+
+To bring a job from the background to the foreground (to make it active again), use the `fg` command followed by the job ID. If you don’t specify a job ID, it will bring the most recent job (`+`).
+
+### Example:
+```bash
+$ fg %1    # Brings job with ID 1 to the foreground
+```
+
+---
+
+## 5. **Killing a Background Job**
+
+To stop (kill) a background job, use the `kill` command followed by the job ID.
+
+### Example:
+```bash
+$ kill %1    # Kills job with ID 1
+```
+
+---
+
+### Summary:
+
+- **Run a job in the background**: `command &`
+- **View all background jobs**: `jobs`
+- **Pause a job**: `Ctrl + Z`
+- **Send a paused job to the background**: `bg`
+- **Bring a job to the foreground**: `fg %job_id`
+- **Kill a job**: `kill %job_id`
+
+This allows you to manage multiple tasks in the terminal without interrupting your workflow!
