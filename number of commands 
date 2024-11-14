@@ -1,0 +1,4 @@
+compgen -c | wc -l
+
+
+compgen -c #to see all possible commands on pc 
