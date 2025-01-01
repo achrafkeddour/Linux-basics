@@ -114,7 +114,7 @@ source ~/.bashrc
 
 **7. Verify the Installation**
 
-Test the installation by running:
+Test the installation by running: (we suppose that you have a file named 'hello.tcl' with its content)
 
 ```
 achraf@VivoBookASUS:~/ns-allinone-2.35/ns-2.35$ ns hello.tcl 
