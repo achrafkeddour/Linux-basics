@@ -100,11 +100,10 @@ sudo ./install
 
 **6. Set Environment Variables**
 
-Add the following lines to your `~/.bashrc` file to set the necessary environment variables (replace `/home/your_username` with your actual home directory path):
+Add this line to your `~/.bashrc` : (with nano or vim)
 
 ```bash
-export PATH=$PATH:/home/your_username/ns-allinone-2.35/bin:/home/your_username/ns-allinone-2.35/tcl8.5.10/unix:/home/your_username/ns-allinone-2.35/tk8.5.10/unix
-export LD_LIBRARY_PATH=/home/your_username/ns-allinone-2.35/otcl-1.14:/home/your_username/ns-allinone-2.35/lib
+export PATH=$PATH:~/ns-allinone-2.35/bin
 ```
 
 Apply the changes:
