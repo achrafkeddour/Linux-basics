@@ -114,7 +114,7 @@ source ~/.bashrc
 
 **7. Verify the Installation**
 
-Test the installation by running: (we suppose that you have a file named 'hello.tcl' with its content)
+Test the installation by running: (we suppose that you have a file named **hello.tcl** with its content)
 
 ```
 achraf@VivoBookASUS:~/ns-allinone-2.35/ns-2.35$ ns hello.tcl 
@@ -122,7 +122,7 @@ achraf@VivoBookASUS:~/ns-allinone-2.35/ns-2.35$ ns
 
 ```
 
-If the installation is successful, you should see the `%` prompt of the NS interpreter.
+If the installation is successful, you should see the `%` prompt of the NS interpreter after **ns** command.
 
 For a visual guide, you can refer to the following video tutorial:
 
