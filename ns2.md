@@ -1,6 +1,6 @@
 To install Network Simulator 2 (NS2) version 2.35 on Ubuntu 22.04, follow these organized steps:
 
-!use vim as a text editor
+> use vim as a text editor
 
 **1. Download NS2.35 Package**
 
