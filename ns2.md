@@ -116,8 +116,10 @@ source ~/.bashrc
 
 Test the installation by running:
 
-```bash
-ns
+```
+achraf@VivoBookASUS:~/ns-allinone-2.35/ns-2.35$ ns hello.tcl 
+achraf@VivoBookASUS:~/ns-allinone-2.35/ns-2.35$ ns
+
 ```
 
 If the installation is successful, you should see the `%` prompt of the NS interpreter.
