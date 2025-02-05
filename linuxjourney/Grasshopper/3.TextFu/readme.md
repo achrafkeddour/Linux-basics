@@ -56,6 +56,16 @@
   ```
   *Copies content from `file.txt` to `index.html` (same as `cp file.txt index.html`).*
 
+For example:
+```
+ls | sort
+```
+
+ls lists files and directories **(stdout)**.
+
+sort takes that list as **stdin** and sorts it.
+
+
 ### 3. Standard Error (`stderr`)
 - **Description:** Redirects error messages separately from standard output.
 - **Examples:**
