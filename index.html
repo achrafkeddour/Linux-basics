@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC VoIP</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+video {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <h2>WebRTC VoIP Call</h2>
+    <div>
+        <video id="localVideo" autoplay playsinline></video>
+        <video id="remoteVideo" autoplay playsinline></video>
+    </div>
+    <button id="startCall">Start Call</button>
+    <button id="endCall">End Call</button>
+
+    <script>
+
+const localVideo = document.getElementById("localVideo");
+const remoteVideo = document.getElementById("remoteVideo");
+const startCallBtn = document.getElementById("startCall");
+const endCallBtn = document.getElementById("endCall");
+
+const signalingServer = new WebSocket("ws://0.0.0.0:3000");
+const peerConnection = new RTCPeerConnection({
+    iceServers: [{ urls: "stun:stun.l.google.com:19302" }]
+});
+
+let localStream;
+
+async function startCall() {
+    localStream = await navigator.mediaDevices.getUserMedia({ video: false, audio: true });
+    localVideo.srcObject = localStream;
+
+    localStream.getTracks().forEach(track => peerConnection.addTrack(track, localStream));
+
+    const offer = await peerConnection.createOffer();
+    await peerConnection.setLocalDescription(offer);
+    signalingServer.send(JSON.stringify({ type: "offer", offer }));
+}
+
+signalingServer.onmessage = async (message) => {
+    const data = JSON.parse(message.data);
+
+    if (data.type === "offer") {
+        await peerConnection.setRemoteDescription(new RTCSessionDescription(data.offer));
+        localStream = await navigator.mediaDevices.getUserMedia({ video: false, audio: true });
+        localVideo.srcObject = localStream;
+        localStream.getTracks().forEach(track => peerConnection.addTrack(track, localStream));
+
+        const answer = await peerConnection.createAnswer();
+        await peerConnection.setLocalDescription(answer);
+        signalingServer.send(JSON.stringify({ type: "answer", answer }));
+    } else if (data.type === "answer") {
+        await peerConnection.setRemoteDescription(new RTCSessionDescription(data.answer));
+    } else if (data.type === "candidate") {
+        await peerConnection.addIceCandidate(new RTCIceCandidate(data.candidate));
+    }
+};
+
+peerConnection.onicecandidate = (event) => {
+    if (event.candidate) {
+        signalingServer.send(JSON.stringify({ type: "candidate", candidate: event.candidate }));
+    }
+};
+
+peerConnection.ontrack = (event) => {
+    remoteVideo.srcObject = event.streams[0];
+};
+
+startCallBtn.addEventListener("click", startCall);
+endCallBtn.addEventListener("click", () => {
+    peerConnection.close();
+    localStream.getTracks().forEach(track => track.stop());
+});
+
+
+    </script>
+</body>
+</html>
