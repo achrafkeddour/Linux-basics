@@ -22,6 +22,8 @@ $ vim file.txt
   ?pattern
   ```
 
+- **Quick Tip**: If you’re at the top of a file, / is more useful; if you’re at the bottom, ? might be faster to find something above.
+
 ## 3. Navigation
 - **Basic Movement:**
   - `h` (or Left Arrow) — Move left by one character.
