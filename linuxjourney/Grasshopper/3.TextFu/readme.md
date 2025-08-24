@@ -35,7 +35,9 @@
 ## Input and Output Redirection
 
 ### 1. Standard Output (`stdout`)
-- **Description:** Redirects the output of a command to a file.
+- This is the default output stream where a program sends its normal output (e.g., results or data).
+- By default, stdout goes to the terminal screen but can be redirected to a file or another command.
+  
 - **Overwrite Content:**
   ```bash
   $ echo "Hello World" > file.txt
@@ -49,7 +51,8 @@
   *Appends "Hello again" to `file.txt` without overwriting.*
 
 ### 2. Standard Input (`stdin`)
-- **Description:** Redirects input from a file to a command.
+- It’s where the program reads input data, typically from the keyboard or redirected from a file/pipe.
+
 - **Example:**
   ```bash
   $ cat < file.txt > index.html
