@@ -70,7 +70,8 @@ sort takes that list as **stdin** and sorts it.
 
 
 ### 3. Standard Error (`stderr`)
-- **Description:** Redirects error messages separately from standard output.
+- **Description:** This is the stream for error messages and diagnostics.
+- It’s separate from stdout so errors can be handled independently (e.g., shown on the screen even if stdout is redirected).
 - **Examples:**
   ```bash
   $ ls /home/nonexistent > output.txt
