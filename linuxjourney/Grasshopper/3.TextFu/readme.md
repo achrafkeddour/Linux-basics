@@ -147,7 +147,9 @@ sort takes that list as **stdin** and sorts it.
   ```
 
 ### 2. Modifying the `PATH` Variable
-- **Definition** : The PATH variable is an environment variable that contains a list of directories where the shell searches for ```excutable´´´ files (commands, scripts, or binaries) when you enter a command in the terminal.
+- **Definition** : The PATH variable is an environment variable that contains a list of directories where the shell searches for ´´´excutable´´´ files (commands, scripts, or binaries) when you enter a command in the terminal.
+- For example, if your PATH is: **/usr/local/bin:/usr/bin:/bin**
+And you type **ls**, the shell looks for ls in **/usr/local/bin**, then **/usr/bin**, then **/bin**, and executes the first instance it finds.
 
 - **Manual Installation Consideration:**
   - Programs installed manually may reside in non-standard directories not listed in `PATH`.
