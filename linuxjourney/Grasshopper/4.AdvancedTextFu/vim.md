@@ -10,6 +10,13 @@ To start editing a file with Vim:
 $ vim file.txt
 ```
 
+Open files in split windows from the command line: 
+```bash
+$ vim -o file1.txt file2.txt
+```
+-  o: Opens files in horizontal splits.
+-  Use -O for vertical splits
+
 ## 2. Search Patterns
 - **Forward Search:** Press `/`, followed by the search term, and press `Enter`.
   ```vim
