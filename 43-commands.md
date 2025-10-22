@@ -9,199 +9,198 @@
 
 ### 2️⃣ **cd** – change current directory
 
-`cd /path` → go to specified directory
-`cd ..` → move one level up
-`cd ~` → go to home directory
-`cd -` → switch to previous directory
+- `cd /path` → go to specified directory
+- `cd ..` → move one level up
+- `cd ~` → go to home directory
+- `cd -` → switch to previous directory
 
 ---
 
 ### 3️⃣ **pwd** – print working directory
 
-`pwd` → show current path
-`pwd -L` → logical path (resolves symlinks)
-`pwd -P` → physical path (no symlinks)
-`pwd --help` → show usage information
+- `pwd` → show current path
+- `pwd -L` → logical path (resolves symlinks)
+- `pwd -P` → physical path (no symlinks)
+- `pwd --help` → show usage information
 
 ---
 
 ### 4️⃣ **mkdir** – make new directories
 
-`mkdir dir1` → create directory
-`mkdir -p a/b/c` → create nested directories
-`mkdir -v dir` → show created directories
-`mkdir -m 755 dir` → set permissions on creation
+- `mkdir dir1` → create directory
+- `mkdir -p a/b/c` → create nested directories
+- `mkdir -v dir` → show created directories
+- `mkdir -m 755 dir` → set permissions on creation
 
 ---
 
 ### 5️⃣ **rm** – remove files or directories
 
-`rm file` → delete file
-`rm -r dir` → delete directory recursively
-`rm -f file` → force delete without prompt
-`rm -i file` → ask before deleting
+- `rm file` → delete file
+- `rm -r dir` → delete directory recursively
+- `rm -f file` → force delete without prompt
+- `rm -i file` → ask before deleting
 
 ---
 
 ### 6️⃣ **cp** – copy files or directories
 
-`cp file1 file2` → copy file
-`cp -r dir1 dir2` → copy recursively
-`cp -i file` → prompt before overwrite
-`cp -v file` → show progress of copy
+- `cp file1 file2` → copy file
+- `cp -r dir1 dir2` → copy recursively
+- `cp -i file` → prompt before overwrite
+- `cp -v file` → show progress of copy
 
 ---
 
 ### 7️⃣ **mv** – move or rename files
 
-`mv file dir/` → move file
-`mv -i old new` → confirm overwrite
-`mv -v src dst` → show moved files
-`mv file newname` → rename file
+- `mv file dir/` → move file
+- `mv -i old new` → confirm overwrite
+- `mv -v src dst` → show moved files
+- `mv file newname` → rename file
 
 ---
 
 ### 8️⃣ **cat** – view file contents
 
-`cat file` → display file content
-`cat -n file` → show line numbers
-`cat -b file` → number nonempty lines
-`cat file1 file2 > merged` → combine files
+- `cat file` → display file content
+- `cat -n file` → show line numbers
+- `cat -b file` → number nonempty lines
+- `cat file1 file2 > merged` → combine files
 
 ---
 
 ### 9️⃣ **grep** – search text patterns
 
-`grep word file` → search for word
-`grep -i word file` → case-insensitive search
-`grep -r word dir` → search recursively
-`grep -n word file` → show line numbers
+- `grep word file` → search for word
+- `grep -i word file` → case-insensitive search
+- `grep -r word dir` → search recursively
+- `grep -n word file` → show line numbers
 
 ---
 
 ### 🔟 **chmod** – change file permissions
 
-`chmod 755 file` → set rwxr-xr-x
-`chmod +x script.sh` → add execute permission
-`chmod -R 644 dir` → recursive change
-`chmod u+w file` → add write for user
+- `chmod 755 file` → set rwxr-xr-x
+- `chmod +x script.sh` → add execute permission
+- `chmod -R 644 dir` → recursive change
+- `chmod u+w file` → add write for user
 
 ---
 
 ### 11️⃣ **chown** – change file ownership
 
-`chown user file` → change owner
-`chown user:group file` → change both
-`chown -R user dir` → recursive change
-`chown --reference=file1 file2` → match permissions
+- `chown user file` → change owner
+- `chown user:group file` → change both
+- `chown -R user dir` → recursive change
+- `chown --reference=file1 file2` → match permissions
 
 ---
 
 ### 12️⃣ **chgrp** – change group ownership
 
-`chgrp group file` → change group
-`chgrp -R group dir` → recursive group change
-`chgrp --reference=file1 file2` → match group
-`chgrp -v group file` → verbose mode
+- `chgrp group file` → change group
+- `chgrp -R group dir` → recursive group change
+- `chgrp --reference=file1 file2` → match group
+- `chgrp -v group file` → verbose mode
 
 ---
 
 ### 13️⃣ **sudo** – run as superuser
 
-`sudo command` → run with root privileges
-`sudo -i` → open root shell
-`sudo -u user cmd` → run as another user
-`sudo visudo` → edit sudoers file safely
+- `sudo command` → run with root privileges
+- `sudo -i` → open root shell
+- `sudo -u user cmd` → run as another user
+- `sudo visudo` → edit sudoers file safely
 
 ---
 
 ### 14️⃣ **apt** – Debian package manager
 
-`apt update` → refresh package lists
-`apt upgrade` → upgrade installed packages
-`apt install pkg` → install package
-`apt remove pkg` → uninstall package
+- `apt update` → refresh package lists
+- `apt upgrade` → upgrade installed packages
+- `apt install pkg` → install package
+- `apt remove pkg` → uninstall package
 
 ---
 
 ### 15️⃣ **yum** – RedHat package manager
 
-`yum install pkg` → install package
-`yum remove pkg` → remove package
-`yum update` → update all packages
-`yum search term` → search for package
+- `yum install pkg` → install package
+- `yum remove pkg` → remove package
+- `yum update` → update all packages
+- `yum search term` → search for package
 
 ---
 
 ### 16️⃣ **ps** – show running processes
 
-`ps` → current shell processes
-`ps -e` → all processes
-`ps -f` → full format listing
-`ps aux` → detailed all users’ processes
+- `ps` → current shell processes
+- `ps -e` → all processes
+- `ps -f` → full format listing
+- `ps aux` → detailed all users’ processes
 
 ---
 
 ### 17️⃣ **kill** – terminate processes
 
-`kill PID` → stop specific process
-`kill -9 PID` → force kill process
-`kill -l` → list all signals
-`killall name` → kill by process name
+- `kill PID` → stop specific process
+- `kill -9 PID` → force kill process
+- `kill -l` → list all signals
+- `killall name` → kill by process name
 
 ---
 
 ### 18️⃣ **top** – real-time process monitor
 
-`top` → launch monitor
-`top -u user` → filter by user
-`top -n 1` → single update only
-`top -o %MEM` → sort by memory usage
+- `top` → launch monitor
+- `top -u user` → filter by user
+- `top -n 1` → single update only
+-`top -o %MEM` → sort by memory usage
 
 ---
 
 ### 19️⃣ **df** – show disk space usage
 
-`df` → display all mounted disks
-`df -h` → human-readable sizes
-`df -T` → show filesystem types
-`df -i` → show inode usage
+- `df` → display all mounted disks
+- `df -h` → human-readable sizes
+- `df -T` → show filesystem types
+- `df -i` → show inode usage
 
 ---
 
 ### 20️⃣ **du** – show directory usage
-
-`du` → disk usage by directory
-`du -h` → human-readable sizes
-`du -s` → summary only
-`du -a` → include files
+- `du` → disk usage by directory
+- `du -h` → human-readable sizes
+- `du -s` → summary only
+- `du -a` → include files
 
 ---
 
 ### 21️⃣ **man** – show manual pages
 
-`man ls` → help for command
-`man -k keyword` → search manuals
-`man -f cmd` → brief description
-`man 5 config` → view specific section
+- `man ls` → help for command
+- `man -k keyword` → search manuals
+- `man -f cmd` → brief description
+- `man 5 config` → view specific section
 
 ---
 
 ### 22️⃣ **ssh** – connect to remote host
 
-`ssh user@host` → connect via SSH
-`ssh -p 2222 host` → custom port
-`ssh -i key.pem host` → use identity file
-`ssh -v host` → verbose connection info
+- `ssh user@host` → connect via SSH
+- `ssh -p 2222 host` → custom port
+- `ssh -i key.pem host` → use identity file
+- `ssh -v host` → verbose connection info
 
 ---
 
 ### 23️⃣ **scp** – secure copy over SSH
 
-`scp file user@host:/path` → upload file
-`scp user@host:file .` → download file
-`scp -r dir host:/path` → recursive copy
-`scp -P 2222 file host:` → specify port
+- `scp file user@host:/path` → upload file
+- `scp user@host:file .` → download file
+- `scp -r dir host:/path` → recursive copy
+- `scp -P 2222 file host:` → specify port
 
 ---
 
