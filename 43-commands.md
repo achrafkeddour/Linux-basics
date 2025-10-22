@@ -1,9 +1,9 @@
 ### 1️⃣ **ls** – list directory contents
 
-`ls -l` → long listing with details
-`ls -a` → show hidden files
-`ls -h` → human-readable file sizes
-`ls -R` → recursive list of directories
+- `ls -l` → long listing with details
+- `ls -a` → show hidden files
+- `ls -h` → human-readable file sizes
+- `ls -R` → recursive list of directories
 
 ---
 
