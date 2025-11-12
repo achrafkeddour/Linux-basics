@@ -1,5 +1,7 @@
 # dhcp spoof
 
+## code 
+
 ```
 #!/usr/bin/env python3
 """
@@ -161,6 +163,8 @@ if __name__ == "__main__":
         time.sleep(1)
 ```
 
+
+# commands 
 
 ```
 sudo apt update
